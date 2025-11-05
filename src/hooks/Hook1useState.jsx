@@ -26,20 +26,21 @@ function App() {
 
 
   // nested state 
-  const [allVAlues, setAllValues] = useState({
-    firstName: "Ankit", lastName: "Gupta", address: {
-      city: "Pune",
-      country: "India",
-    }
-  })
+  // const [allVAlues, setAllValues] = useState({
+  //   firstName: "Ankit", lastName: "Gupta", address: {
+  //     city: "Pune",
+  //     country: "India",
+  //   }
+  // })
 
-  const handleClick = () => {
-    setAllValues({ ...allVAlues, lastName: 'Pal', address: { ...allVAlues.address, city: "Bhopal" } })
-  }
+  // const handleClick = () => {
+  //   setAllValues({ ...allVAlues, lastName: 'Pal', address: { ...allVAlues.address, city: "Bhopal" } })
+  // }
 
 
   return (
     // <div>
+    <h1>useState Hook</h1>
     //   {/* <div>Button clicked - {count} time</div> */}
     //   {/* <button onClick={() => { setCount((prev) => prev + 1); setCount((prev) => prev + 1) }}>Click</button> */}
 
@@ -79,12 +80,12 @@ function App() {
 
 
     // nested state 
-    <>
-      <div>
-        {`My firstname is ${allVAlues.firstName} and lastname is ${allVAlues.lastName} and city is ${allVAlues.address.city} and country is ${allVAlues.address.country}`}
-      </div>
-      <button onClick={handleClick}>Update Name</button>
-    </>
+    // <>
+    //   <div>
+    //     {`My firstname is ${allVAlues.firstName} and lastname is ${allVAlues.lastName} and city is ${allVAlues.address.city} and country is ${allVAlues.address.country}`}
+    //   </div>
+    //   <button onClick={handleClick}>Update Name</button>
+    // </>
 
   )
 }
